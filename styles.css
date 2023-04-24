@@ -1,0 +1,53 @@
+body {
+    font-family: 'Open Sans', sans-serif;;
+    background: white
+}
+
+section {
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+}
+
+.container {
+    font-weight: bold;
+    color: white;
+    padding: 100px;
+    border-radius: 10px;
+    background: url('https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: navy;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
