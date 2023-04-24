@@ -17,12 +17,12 @@ function giveWeatherInfo(city, date, tempHigh, tempLow, description, currentTemp
   const descriptionElement = document.createElement("p");
 
   // Text of my new elements
-  heading.textContent = city;
-  dateElement.textContent = date;
+  heading.textContent = 'Weather of ' + city;
+  dateElement.textContent = new Date(date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   temperature.textContent = `${currentTemp}°F` ;
   highTemperature.textContent = `High: ${tempHigh}\°F`;
   lowTemperature.textContent = `Low: ${tempLow}\°F`;
-  descriptionElement.textContent = description;
+  descriptionElement.textContent = `Sky Conditions: ${description}`;
 
   // Remove any existing weather information
   while (weatherInfo.firstChild) {
